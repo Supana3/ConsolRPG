@@ -22,7 +22,7 @@ void Player::showInventory() const {
   inventory.display();
 }
 void Player::addItem(const Item& item) {
-  bool added = innventory.addItem(item);
+  bool added = inventory.addItem(item);
   if (added) {
       std::cout << "An item was added: "<< item.getName() <<std::endl;
       std::cout << "Hero found a [" << item.getName()
