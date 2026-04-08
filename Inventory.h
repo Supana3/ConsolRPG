@@ -1,19 +1,15 @@
 #progma onc
-#include <string>
-#include "Inventory.h"
+#include "Item.h"
 
-class Player {
+class Inventory {
 private:
-    std:: string name;
-    int health;
-    Inventory inventory;
+    Item* items;
+    int capacity;
+    int itemCout;
 
 public:
-    Player (std:: string name, int health);
-    ~Player();
-    std:: string getName() const;
-    int getHealth() const;
+    Inventory(int capacity);
+    ~Inventory();
+    bool addItem(const Item& item);
     void display() const;
-    void showInventory() const;
-    void addItem(const Item& item);
 };
