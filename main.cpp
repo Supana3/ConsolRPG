@@ -10,13 +10,13 @@ int main() {
   Item potion("Potion", 5); 
 
   std::cout << "\n--- Adding items to hero's invenypti ---" << std::endl;
-  hero.addItrm(sword);
-  hero.addItem(shield);
+  hero.addItem(sword);
+  hero.addItem(sheild);
 
   std::cout << "\n---Hero's Inventory ---" << std::endl;
   hero.showInventory();
 
   std::cout << "\nTotal items added to inventories:"
-            << Item::getTotalItem() << std::endl;
+            << Item::getTotalItems() << std::endl;
 return 0;
 }
