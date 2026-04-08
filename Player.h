@@ -1,4 +1,4 @@
-#progma onc
+#pragma onc
 #include <string>
 #include "Inventory.h"
 
@@ -17,3 +17,4 @@ public:
     void showInventory() const;
     void addItem(const Item& item);
 };
+
