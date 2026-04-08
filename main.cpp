@@ -6,10 +6,10 @@ int main() {
   Player hero ("Hero", 100);
 
   Item sword("Sword", 10);
-  Item sheild("Sheild", 15);
+  Item shield("Shield", 15);
   Item potion("Potion", 5); 
 
-  std::cout << "\n--- Adding items to hero's invenypti ---" << std::endl;
+  std::cout << "\n--- Adding items to hero's inventory ---" << std::endl;
   hero.addItem(sword);
   hero.addItem(sheild);
 
