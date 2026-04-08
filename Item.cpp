@@ -21,3 +21,4 @@ int Item:: getValue() const {
 }
 void Item::display() const {
   std:: cout << "[" << name << "] (Value: " << value << ")" << std::endl;
+}
