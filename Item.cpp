@@ -10,13 +10,13 @@ Item::Item(std::string name, int value)
 int Item::getTotalItems() {
    return totalItems;
 }
-void Item:: incrementTotalItems() {
+void Item::incrementTotalItems() {
   totalItems++;
 }
 std::string Item::getName() const {
   return name;
 }
-int Item:: getValue() const {
+int Item::getValue() const {
   return value;
 }
 void Item::display() const {
