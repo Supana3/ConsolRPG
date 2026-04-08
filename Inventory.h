@@ -1,11 +1,11 @@
-#progma onc
+#pragma onc
 #include "Item.h"
 
 class Inventory {
 private:
     Item* items;
     int capacity;
-    int itemCout;
+    int itemCount;
 
 public:
     Inventory(int capacity);
@@ -13,3 +13,4 @@ public:
     bool addItem(const Item& item);
     void display() const;
 };
+
