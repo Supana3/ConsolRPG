@@ -1,22 +1,12 @@
 #include <iostream>
-#include "Player.h"
-#include "Item.h"
+#include "Game.h"
 
 int main() {
-  Player hero ("Hero", 100);
-
-  Item sword("Sword", 10);
-  Item shield("Shield", 15);
-  Item potion("Potion", 5); 
-
-  std::cout << "\n--- Adding items to hero's inventory ---" << std::endl;
-  hero.addItem(sword);
-  hero.addItem(sheild);
-
-  std::cout << "\n---Hero's Inventory ---" << std::endl;
-  hero.showInventory();
-
-  std::cout << "\nTotal items added to inventories:"
-            << Item::getTotalItems() << std::endl;
+    try {
+      Game game;
+      game.run();
+    } catch (const std::exception& e) {
+        std::cout << "Error: " << e.what() << std::endl;
+    }
 return 0;
 }
